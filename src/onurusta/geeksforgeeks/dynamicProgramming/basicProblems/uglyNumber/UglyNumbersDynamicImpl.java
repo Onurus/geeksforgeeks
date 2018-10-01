@@ -3,13 +3,13 @@ package onurusta.geeksforgeeks.dynamicProgramming.basicProblems.uglyNumber;
 public class UglyNumbersDynamicImpl extends AbstractSolution {
 
 	@Override
-	protected int findResult(int n) {
-		int ugly[] = new int[n]; // To store ugly numbers
+	protected long findResult(long n) {
+		long ugly[] = new long[(int) n]; // To store ugly numbers
 		int i2 = 0, i3 = 0, i5 = 0;
-		int next_multiple_of_2 = 2;
-		int next_multiple_of_3 = 3;
-		int next_multiple_of_5 = 5;
-		int next_ugly_no = 1;
+		long next_multiple_of_2 = 2;
+		long next_multiple_of_3 = 3;
+		long next_multiple_of_5 = 5;
+		long next_ugly_no = 1;
 
 		ugly[0] = 1;
 

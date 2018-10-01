@@ -5,7 +5,7 @@ public class UglyNumbersBasicImpl extends AbstractSolution {
 	/*
 	 * This function divides a by greatest divisible power of b
 	 */
-	private int maxDivide(int a, int b) {
+	private long maxDivide(long a, long b) {
 		while (a % b == 0) {
 			a = a / b;
 		}
@@ -15,7 +15,7 @@ public class UglyNumbersBasicImpl extends AbstractSolution {
 	/*
 	 * Function to check if a number is ugly or not
 	 */
-	private int isUgly(int no) {
+	private long isUgly(long no) {
 		no = maxDivide(no, 2);
 		no = maxDivide(no, 3);
 		no = maxDivide(no, 5);
@@ -26,11 +26,11 @@ public class UglyNumbersBasicImpl extends AbstractSolution {
 	/*
 	 * Function to get the nth ugly number
 	 */
-	private int getNthUglyNo(int n) {
-		int i = 1;
+	private long getNthUglyNo(long n) {
+		long i = 1;
 
 		// ugly number count
-		int count = 1;
+		long count = 1;
 
 		while (n > count) {
 			i++;
@@ -42,7 +42,7 @@ public class UglyNumbersBasicImpl extends AbstractSolution {
 	}
 
 	@Override
-	protected int findResult(int n) {
+	protected long findResult(long n) {
 		return getNthUglyNo(n);
 	}
 }

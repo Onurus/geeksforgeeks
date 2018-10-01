@@ -2,9 +2,9 @@ package onurusta.geeksforgeeks.dynamicProgramming.basicProblems.uglyNumber;
 
 public abstract class AbstractSolution {
 
-	public void findAndPrint(int n) {
+	public void findAndPrint(long n) {
 		long startMs = System.currentTimeMillis();
-		int result = findResult(n);
+		long result = findResult(n);
 		long stopMs = System.currentTimeMillis();
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.getClass().getSimpleName());
@@ -16,5 +16,5 @@ public abstract class AbstractSolution {
 		System.out.println(sb.toString());
 	}
 
-	protected abstract int findResult(int n);
+	protected abstract long findResult(long n);
 }

@@ -10,7 +10,7 @@ public class Launch {
 
 	/* Driver program to test above functions */
 	public static void main(String args[]) {
-		for (int i = 100; i < 1500; i = i + 100) {
+		for (int i = 100; i < 1000; i = i + 100) {
 			final int n = i;
 			System.out.println("--- " + n + " ---");
 			List.of(BASIC, DYNAMIC).forEach(solution -> solution.findAndPrint(n));
